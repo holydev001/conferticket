@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@import url(https://db.onlinewebfonts.com/c/1a5c2d8bbd4e28d99a6efcbb9a5b378f?family=JejuMyeongjo);
+
+
+
+:root {
+  font-family: "JejuMyeongjo";
+  color: white;
+  background-color: #02191D;
+}
+
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+
+@layer utilities {
+
+  .image-preview-container {
+    background-image: url('assets/input.svg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+
+  .result-container{
+    display: grid;
+    position: absolute;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 225px;
+    height: 160px;
+
+  }
+
+  .item1{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+    font-size: 10px;
+    overflow-wrap:break-word ;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 25px 0px 0px 6px;
+    
+
+  }
+  .item2{
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+    font-size: 10px;
+    overflow-wrap:break-word ;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 25px 0px 0px 6px;
+  }
+  .item3{
+    grid-column: 1/2;
+    grid-row: 3;
+    font-size: 10px;
+    overflow-wrap:break-word ;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 25px 0px 20px 7px ;
+  }
+
+  .profile-pic{
+    width: 140px;
+    height: 140px;
+    border: 5px solid rgba(36, 160, 181, 0.5);
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+}
